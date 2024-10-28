@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #f5a623;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #f5a623;
+        }
+
+        /* Featured game section */
+        .featured {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #333;
+        }
+
+        .featured h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #f5a623;
+        }
+
+        .game-card {
+            background-color: #222;
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #f5a623;
+        }
+
+        .game-card p {
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        .game-card button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            background-color: #f5a623;
+            color: #111;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-card button:hover {
+            background-color: #ffbe40;
+        }
+
+        .game-card img {
+            height: 280px;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+       
+        @media (min-width: 768px) {
+            .featured {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .game-card {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Gaming Hub</h1>
+    </header>
+
+    <!-- Featured Games Section -->
+    <section class="featured">
+        <h2>Featured Game</h2>
+        <div class="game-card">
+            <img src="images/ff.png" alt="FREE FIRE Game">
+            <h3>FREE FIRE</h3>
+            <p>Free Fire is a fast-paced battle royale game where players parachute onto an island and compete to be the last one standing. Matches last about 10 minutes, featuring a variety of characters, weapons, and strategic elements!</p>
+            <a href="https://www.google.com/search?q=Download+Free+fire" target="_blank">
+                <button>Play Now</button>
+            </a>
+        </div>
+
+        <div class="game-card">
+            <img src="images/pubg.png" alt="PUBG Game">
+            <h3>PUBG</h3>
+            <p>PUBG (PlayerUnknown's Battlegrounds) is a battle royale game where up to 100 players parachute onto an island and fight to be the last alive. Players scavenge for weapons and gear while navigating a shrinking play zone.</p>
+            <a href="https://www.google.com/search?q=Download+PUBG" target="_blank">
+                <button>Play Now</button>
+            </a>
+        </div>
+        
+        
+        <div class="game-card">
+            <img src="images/valo.png" alt="VALORANT Game">
+            <h3> VALORANT</h3>
+            <p>Valorant is a tactical first-person shooter where teams of five players choose Agents with unique abilities to secure victory. With a focus on strategy, communication, and precise gunplay, each match is a test of teamwork and skill!</p>
+            <a href="https://www.google.com/search?q=Download+Valorant" target="_blank">
+                <button>Play Now</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Gaming Hub | All rights reserved
+    </footer>
+</body>
+</html>
